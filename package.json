@@ -17,7 +17,7 @@
     "test": "npm run build && npm run lint && npm run size && jest -c jest.json",
     "test:debug": "node --inspect node_modules/.bin/jest -c jest.json --runInBand",
     "test:watch": "jest -c jest.json --watch",
-    "build": "NODE_ENV=production webpack --mode=production && cp -r dist/ /Users/jiesong/Code/ETU/etu-viewer/public/mirador3/ && cp -r dist/ /Users/jiesong/Code/ETU/etu-excel/src/taskpane ",
+    "build": "NODE_ENV=production webpack --mode=production && cp -r dist/ ../mirador-integration",
     "build:dev": "webpack --mode=development",
     "build:es": "mkdir -p dist/es && cp -r src dist/es && NODE_ENV=production MODULE_FORMAT=es babel dist/es -d dist/es",
     "build:cjs": "mkdir -p dist/cjs && cp -r src dist/cjs && NODE_ENV=production MODULE_FORMAT=cjs babel dist/cjs -d dist/cjs",
